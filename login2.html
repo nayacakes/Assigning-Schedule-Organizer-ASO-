@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ASO | Log in</title>
+    <link rel="stylesheet" href="login2.css">
+    <link rel="shortcut icon" href="logo-modified.png" type="image/x-icon">
+</head>
+
+<body>
+    <h1>Assigning Schedule Organizer</h1>
+
+  <form id="loginForm">
+      <div class="logocon">
+          <img src="logo.jpg" alt="logo" id="logoaso">
+      </div>
+
+      <div class="uncon">
+          <label id="un">Username:</label>
+          <input type="text" placeholder="Enter Username" name="username" required>
+      </div>
+
+      <div class="pwcon">
+          <label id="pw">Password:</label>
+          <input type="password" placeholder="Enter Password" name="password" required>
+      </div>
+
+      <button type="submit" id="loginBtn">Login</button>
+      <p>Don't have an account? <a href="#" id="signupLink">Sign up</a></p>
+      <p><a href="#" id="forgotPasswordLink">Forgot password?</a></p>
+      <p id="forgotPasswordFeedback"></p> 
+  </form>
+
+  <form id="signupForm" style="display: none;">
+      <div class="logocon">
+          <img src="logo.jpg" alt="logo" id="logoaso">
+      </div>
+
+      <div class="uncon">
+          <label>Username:</label>
+          <input type="text" placeholder="Enter Username" name="signupUsername" required>
+      </div>
+
+      <div>
+          <label>Password:</label>
+          <input type="password" placeholder="Enter Password" name="signupPassword" required>
+      </div>
+
+      <button type="submit" id="signupBtn">Sign Up</button>
+  </form>
+
+<script>
+document.getElementById("signupLink").addEventListener("click", function(event) {
+  event.preventDefault();
+  document.getElementById("loginForm").style.display = "none";
+  document.getElementById("signupForm").style.display = "block";
+});
+
+document.getElementById("loginForm").addEventListener("submit", function(event) {
+  event.preventDefault();
+  var username = document.getElementById("loginForm").elements["username"].value;
+  var password = document.getElementById("loginForm").elements["password"].value;
+  var storedPassword = localStorage.getItem(username);
+  if (storedPassword === password) {
+    window.location.href = "home.html"; 
+  } else {
+    document.getElementById("forgotPasswordFeedback").textContent = "Invalid username or password";
+  }
+});
+
+document.getElementById("signupForm").addEventListener("submit", function(event) {
+  event.preventDefault();
+  var username = document.getElementById("signupForm").elements["signupUsername"].value;
+  var password = document.getElementById("signupForm").elements["signupPassword"].value;
+  localStorage.setItem(username, password); 
+  alert("Signup successful!");
+  document.getElementById("loginForm").style.display = "block";
+  document.getElementById("signupForm").style.display = "none";
+});
+
+document.getElementById("forgotPasswordLink").addEventListener("click", function(event) {
+  event.preventDefault();
+  document.getElementById("forgotPasswordFeedback").textContent = "Please contact support for password recovery.";
+});
+</script>
+</body>
+</html>

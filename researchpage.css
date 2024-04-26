@@ -1,0 +1,150 @@
+@font-face {
+  font-family: name;
+  src: url(Copyduck.ttf);
+}
+
+@font-face {
+  font-family: paragraph;
+  src: url(CHICKEN\ Pie.ttf);
+}
+
+@font-face {
+  font-family: fn;
+  src: url(Sobear.ttf);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #E4BAAE;
+}
+
+.Bar{
+  background-color: #301F19;  
+  height: 90px;
+  width: 1550px;
+}
+
+.logocon{
+  margin-left: 40px;
+}
+
+#logo{
+  border-radius: 50%;
+  margin-top: 10px;
+  margin-left: 15px;
+}
+
+.aso{
+  font-family: fn;
+  color: #F5F5F5;
+  margin-top: 35px;
+  margin-left: 140px;
+  font-size: 25px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 53px;
+  margin-left: 995px;
+  margin-top: -45px;
+  right: 200px;
+}
+
+.nav-links li {
+  display: inline;
+}
+
+.nav-links a {
+  color: #F5F5F5;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 300;
+  font-family: name;
+}
+
+.nav-links a:hover {
+  color: #e4baae;
+}
+
+.container{
+  background-color: #A24A32;
+  color: #f5f5f5;
+  padding: 40px;
+  font-size: larger;
+}
+
+.concept-container {
+  background-color: #CC9871;
+  color: #f5f5f5;
+  padding: 40px;
+}
+
+.abt{
+  font-family: name;
+  text-align: center;
+}
+
+.p1{
+  font-family: paragraph;
+  text-align: center;
+}
+
+h1{
+  font-family: name;
+  text-shadow: 1px 1px #301F19;
+}
+
+p{
+  font-family: paragraph;
+  text-shadow: 2px 1px #301F19;
+  font-size: 17px;
+}
+
+.title {
+  padding: 30px;
+  color: #301F19;
+  font-size: 35px;
+  text-shadow: 1px 1px #f5f5f5;
+}
+
+.website-description {
+  background-color: #e4baae;
+  width: 100%;
+  margin-bottom: 20px;
+  padding-bottom: 45px;
+}
+
+.web{
+  font-family: name;
+  color: #301F19;
+  text-shadow: 2px 1px #f5f5f5;
+  text-align: center;
+  font-size: 35px;
+}
+
+h2{
+  font-family: name;
+  text-shadow: 2px 1px #301F19;
+  margin-left: 3%;
+  font-size: 28px;
+  color: #F5F5F5;
+}
+
+li{
+  font-family: paragraph;
+  text-shadow: 1px 1px #f5f5f5;
+  font-size: 17px;
+  color: #301F19;
+}
+
+footer {
+  background-color: #301F19;
+  color: white;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  font-family: fn;
+}

@@ -1,0 +1,116 @@
+@font-face {
+    font-family: name;
+    src: url(Copyduck.ttf);
+  }
+  
+@font-face {
+    font-family: paragraph;
+    src: url(CHICKEN\ Pie.ttf);
+  }
+  
+@font-face {
+    font-family: fn;
+    src: url(Sobear.ttf);
+  }
+
+.Bar{
+    background-color: #301F19;  
+    height: 90px;
+    width: 1550px;
+  }
+  
+  .logocon{
+    margin-left: 40px;
+  }
+  
+  #logo{
+    border-radius: 50%;
+    margin-top: 10px;
+    margin-left: 15px;
+  }
+  
+  .aso{
+    font-family: fn;
+    color: #F5F5F5;
+    margin-top: 35px;
+    margin-left: 140px;
+    font-size: 25px;
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 53px;
+    margin-left: 995px;
+    margin-top: -45px;
+    right: 200px;
+  }
+  
+  .nav-links li {
+    display: inline;
+  }
+  
+  .nav-links a {
+    color: #F5F5F5;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 300;
+    font-family: name;
+  }
+  
+  .nav-links a:hover {
+    color: #e4baae;
+  }
+
+body{
+    margin: 0;
+    display: grid;
+    min-height: 100vh;
+    place-content: center;
+    background: #e4baae;
+}
+
+.title-section {
+    padding: 3px;
+    text-align: center;
+    background-color: #A24A32;
+    color: white;
+  }
+
+h1{
+    text-align: center;
+    font-family: name;
+    color: white;
+    font-size: 35px;
+    text-shadow: 2px 1px #301F19;
+}
+
+.pics{
+    margin-left: 450px;
+    margin-top: 30px;
+    --s: 200px;
+    --g: 10px;
+    --f: 1.5;
+
+    display: grid;
+    gap: var(--g); 
+    width: calc(3*var(--s) + 2*var(--g));
+    aspect-ratio: 1;
+    grid-template-columns: repeat(3,auto);
+}
+
+.pics > img{
+    width: 0;
+    height: 0;
+    min-height: 100%;
+    min-width: 100%;
+    object-fit: cover;
+    cursor: pointer;
+    transition: .35s linear;
+}
+
+.pics img:hover{
+    filter: grayscale(0);
+    width: calc(var(--s)*var(--f));
+    height: calc(var(--s)*var(--f));
+}

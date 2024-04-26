@@ -1,0 +1,199 @@
+body{
+    margin: 0;
+    bottom: 0;
+    background-color: #E4BAAE;
+    background-image: url(pawpaw.gif);
+    background-size: cover;
+    background-repeat: none;
+}
+
+@font-face {
+    font-family: myHeadingfont ;
+    src: url(Copyduck.ttf);
+}
+
+@font-face {
+    font-family: myButtonfont ;
+    src: url('Sobear.ttf');
+}
+
+@font-face {
+    font-family: chickenpie;
+    src: url(CHICKEN\ Pie.ttf);
+}
+
+.Bar{
+  background-color: #301F19;  
+}
+
+.logocontainer{
+    margin-left: 40px;
+}
+
+#logo{
+    border-radius: 50%;
+}
+
+.aso{
+    font-family: myButtonfont;
+    color: #F5F5F5;
+    margin-top: 25px;
+    margin-left: 130px;
+    font-size: 25px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 53px;
+    margin-left: 940px;
+    margin-top: -45px;
+    right: 200px;
+}
+
+.nav-links li {
+    display: inline;
+}
+
+.nav-links a {
+    color: #F5F5F5;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 300;
+    font-family: myHeadingfont;
+}
+
+.nav-links a:hover {
+    color: #e4baae;
+}
+
+section {
+    padding: 10px;
+}
+
+.but{
+    width: 350px;
+    margin-top: 25px;
+}
+
+button {    
+    width: 300px;
+    height: 90px;
+    border-radius: 0.5rem;
+    border-color: #301F19;
+    background-color: #A24A32;
+    color: #F5F5F5;
+    font-size: larger;
+    margin-left: 13%;
+    font-family: myHeadingfont;
+    margin-top: 3px;
+    transform: scale(0.9);
+    fill: #333333;
+    transition: transform 0.5s;
+}
+
+button:hover{
+    box-shadow: inset 4px 4px 6px -1px rgba(0,0,0,0.2),
+	      inset -4px -4px 6px -1px rgba(255,255,255,0.7),
+	      -0.5px -0.5px 0px rgba(255,255,255,1),
+	      0.5px 0.5px 0px rgba(0,0,0,0.15),
+	      0px 12px 10px -10px rgba(0,0,0,0.05);
+  border: 1px solid rgba(0,0,0,0.1);
+  transform: translateY(0.5em);
+}
+
+.dog{
+    position: relative;
+    border-radius: 50% 50%;
+    width: 100px;
+}
+
+.corgi{
+    position: relative;
+    border-radius: 24px;
+    align-items: center; 
+    justify-content: center; 
+    display: flex;
+    margin-left: 980px;
+    margin-top: -527px;
+    bottom: 0;
+}
+
+.dot-1{
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    left: 57%;
+    top: 490px;
+    transform: translate(0, 0);
+    border-radius: 50%;
+    background-image: linear-gradient(135deg, #301F19, #A24A32, #FF7F83, #F5F5F5, #E45842);
+    background-size: 400% 400%;
+    filter: blur(24px);
+    animation: gradient 1s ease infinite, move 5s linear infinite;
+    transform-origin: center;
+    z-index: -1; 
+}
+
+.dot-2{
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    left: 60%;
+    top: 400px;
+    transform: translate(0, 0);
+    border-radius: 50%;
+    background-image: linear-gradient(135deg, #7a5a4f, #a0604e, #FF7F83, #F5F5F5, #E45842);
+    background-size: 400% 400%;
+    filter: blur(24px);
+    animation: gradient 1s ease infinite, move 5s linear infinite;
+    transform-origin: center;
+    z-index: -1; 
+}
+
+.greetingscontainer{
+    width: 450px;
+    height: 500px;
+    position: relative;
+    margin-left: 445px;
+    margin-top: -500px;
+    bottom: 0;
+    border-radius: 24px;
+    /* From https://css.glass */
+background: rgba(160, 96, 78, 0.58);
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(7.5px);
+-webkit-backdrop-filter: blur(7.5px);
+border: 1px solid rgba(160, 96, 78, 0.41);
+}
+
+.greeetingsnote{
+    position: absolute;
+    align-items: center; 
+    justify-content: center; 
+    display: flex;
+}
+
+.greetingsletter{
+    text-align: center;
+    font-family: chickenpie ;
+    color: #F5F5F5;
+}
+
+h2{
+    color: #301F19;
+}
+
+#gif{
+    border-radius: 24px;
+}
+
+footer {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    background-color: #301F19;
+    color: #F5F5F5;
+    text-align: center;
+    font-family: myButtonfont;
+}

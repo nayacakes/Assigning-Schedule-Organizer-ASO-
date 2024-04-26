@@ -1,0 +1,88 @@
+@font-face {
+  font-family: copyduck;
+  src: url('Copyduck.ttf');
+}
+
+body {
+  background-image: url(bgg\ \(1\).jpg);
+  background-size: cover;
+}
+
+h1 {
+  color: #F5F5F5;
+  font-family: copyduck;
+  margin-top: 78px;
+  text-shadow: 4px 5px #301F19;
+  text-align: center;
+}
+
+button {
+  background-color: #CC9871;
+  border-radius: 16px;
+  width: 100%;
+  color: #301F19;
+  padding: 15px;
+  margin: 10px 0px;
+  border: none;
+  cursor: pointer;
+}
+
+#logoaso {
+  border-radius: 50%;
+  height: 25%;
+  width: 25%;
+  justify-content: center;
+  position: relative;
+  margin-left: 105px;
+}
+
+.uncon {
+  margin-top: 30px;
+}
+
+form {
+  border: 3px solid #301F19;
+  padding: 20px;
+  width: 300px;
+  height: 420px;
+  margin: 0 auto;
+  background-color: #e4baae;
+  position: absolute;
+  margin-top: 30px;
+  margin-left: 565px;
+  box-shadow: 3px 4px 0px 1px #E99F4C;
+  border-radius: 40px;
+}
+
+#signupForm {
+  border: 3px solid #301F19;
+  padding: 20px;
+  width: 300px;
+  height: 350px;
+  margin: 0 auto;
+  background-color: #e4baae;
+  position: absolute;
+  margin-top: 45px;
+  margin-left: 565px;
+  box-shadow: 3px 4px 0px 1px #E99F4C;
+  border-radius: 40px;
+}
+
+input[type="text"],
+input[type="password"] {
+  border-radius: 16px;
+  width: 100%;
+  margin: 8px 0;
+  padding: 12px 20px;
+  display: inline-block;
+  border: 2px solid green;
+  box-sizing: border-box;
+}
+
+#un {
+  margin-top: 10px;
+}
+
+button:hover {
+  opacity: 0.7;
+}

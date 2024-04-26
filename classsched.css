@@ -1,0 +1,41 @@
+@font-face {
+    font-family: font ;
+    src: url(Copyduck.ttf);
+}
+
+@font-face {
+    font-family: myButtonfont ;
+    src: url('Sobear.ttf');
+}
+
+body{
+    background-image: url(classched\ bg.gif);
+    background-size: cover;
+    background-repeat: none;
+    margin: 0;
+    bottom: 0;
+}
+
+.color{
+    color: #301F19;
+}
+
+.font{
+    font-family: font;
+    font-size: 50px;
+}
+
+#home-btn{
+    padding: 10px;
+    width: 170px;
+    color: #635c4e;
+    z-index: 1;
+    border-radius: 12px;
+    border: none;
+    margin-bottom: 13px;
+}
+
+#home-btn:hover{
+    color: #635c4e;
+}
+
